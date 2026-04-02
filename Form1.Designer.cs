@@ -32,6 +32,7 @@
             this.txtPW = new System.Windows.Forms.TextBox();
             this.lblAppName = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.lblErrorMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtID
@@ -85,11 +86,23 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // lblErrorMsg
+            // 
+            this.lblErrorMsg.AutoSize = true;
+            this.lblErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorMsg.Location = new System.Drawing.Point(141, 290);
+            this.lblErrorMsg.Name = "lblErrorMsg";
+            this.lblErrorMsg.Size = new System.Drawing.Size(287, 15);
+            this.lblErrorMsg.TabIndex = 4;
+            this.lblErrorMsg.Text = "아이디 또는 비밀번호가 잘못 되었습니다.";
+            this.lblErrorMsg.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 450);
+            this.Controls.Add(this.lblErrorMsg);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblAppName);
             this.Controls.Add(this.txtPW);
@@ -107,6 +120,7 @@
         private System.Windows.Forms.TextBox txtPW;
         private System.Windows.Forms.Label lblAppName;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lblErrorMsg;
     }
 }
 
