@@ -4,13 +4,13 @@
 - C# 프로그래밍학습
 - 1줄소개: 사용자가 아이디와 비밀번호를 입력받으면 메시지를 띄우는 로그인 창 제작
 - 사용한 플랫폼: 
-    -C#, .NET Windows Forms, Visual Studio, GitHub
+    - C#, .NET Windows Forms, Visual Studio, GitHub
 - 사용한 컨트롤:
-    -Label, TextBox, Button
+    - Label, TextBox, Button
 - 사용한 기술과 구현한 기능:
-    -Visual Studio를 이용하여 UI 디자인
-    -TextBox를 통하여 아이디와 비밀번호 입력 받기
-    -Placeholder를 이용하여 힌트 텍스트 기능 구현
+    - Visual Studio를 이용하여 UI 디자인
+    - TextBox를 통하여 아이디와 비밀번호 입력 받기
+    - Placeholder를 이용하여 힌트 텍스트 기능 구현
 
 
 ## 실행 화면 (과제1)
