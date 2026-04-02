@@ -36,48 +36,58 @@
             // 
             // txtID
             // 
-            this.txtID.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtID.Location = new System.Drawing.Point(195, 124);
+            this.txtID.Font = new System.Drawing.Font("굴림", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtID.ForeColor = System.Drawing.Color.Silver;
+            this.txtID.Location = new System.Drawing.Point(144, 119);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(377, 53);
-            this.txtID.TabIndex = 0;
+            this.txtID.Size = new System.Drawing.Size(486, 61);
+            this.txtID.TabIndex = 2;
+            this.txtID.Text = "아이디";
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            this.txtID.Enter += new System.EventHandler(this.txtID_Enter);
+            this.txtID.Leave += new System.EventHandler(this.txtID_Leave);
             // 
             // txtPW
             // 
-            this.txtPW.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtPW.Location = new System.Drawing.Point(195, 212);
+            this.txtPW.Font = new System.Drawing.Font("굴림", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtPW.ForeColor = System.Drawing.Color.Silver;
+            this.txtPW.Location = new System.Drawing.Point(144, 205);
             this.txtPW.Name = "txtPW";
-            this.txtPW.Size = new System.Drawing.Size(377, 53);
-            this.txtPW.TabIndex = 1;
+            this.txtPW.Size = new System.Drawing.Size(486, 61);
+            this.txtPW.TabIndex = 3;
+            this.txtPW.Text = "패스워드";
+            this.txtPW.Enter += new System.EventHandler(this.txtPW_Enter);
+            this.txtPW.Leave += new System.EventHandler(this.txtPW_Leave);
             // 
             // lblAppName
             // 
             this.lblAppName.AutoSize = true;
-            this.lblAppName.Font = new System.Drawing.Font("굴림", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblAppName.Font = new System.Drawing.Font("굴림", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblAppName.Location = new System.Drawing.Point(321, 36);
+            this.lblAppName.Location = new System.Drawing.Point(273, 20);
             this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(140, 47);
-            this.lblAppName.TabIndex = 2;
+            this.lblAppName.Size = new System.Drawing.Size(238, 80);
+            this.lblAppName.TabIndex = 0;
             this.lblAppName.Text = "Login";
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnLogin.Font = new System.Drawing.Font("굴림", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnLogin.Font = new System.Drawing.Font("굴림", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(287, 334);
+            this.btnLogin.Location = new System.Drawing.Point(248, 348);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(210, 104);
-            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Size = new System.Drawing.Size(275, 81);
+            this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "로그인";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(766, 450);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblAppName);
             this.Controls.Add(this.txtPW);
