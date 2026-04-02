@@ -45,6 +45,7 @@
             this.txtID.Text = "아이디";
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             this.txtID.Enter += new System.EventHandler(this.txtID_Enter);
+            this.txtID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtID_KeyDown);
             this.txtID.Leave += new System.EventHandler(this.txtID_Leave);
             // 
             // txtPW
@@ -57,6 +58,7 @@
             this.txtPW.TabIndex = 3;
             this.txtPW.Text = "패스워드";
             this.txtPW.Enter += new System.EventHandler(this.txtPW_Enter);
+            this.txtPW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPW_KeyDown);
             this.txtPW.Leave += new System.EventHandler(this.txtPW_Leave);
             // 
             // lblAppName
