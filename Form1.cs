@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,7 +45,7 @@ namespace LoginScreen
             {
                 txtPW.Text = "";
                 txtPW.ForeColor = Color.Black;
-                txtPW.UseSystemPasswordChar = true;
+                txtPW.UseSystemPasswordChar = !chkShowPW.Checked;
             }
         }
         private void txtPW_Leave(object sender, EventArgs e)
@@ -66,6 +66,7 @@ namespace LoginScreen
             string inputPW = txtPW.Text; 
             
             if (inputID == myID && inputPW == myPW) { 
+                lblErrorMsg.Visible = false;
                 MessageBox.Show("로그인성공!"); 
             }
             else {
@@ -73,6 +74,31 @@ namespace LoginScreen
                 lblErrorMsg.Visible = true;
                 // lblErrorMsg.Visible = false;
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtID.Text = "아이디";
+            txtID.ForeColor = Color.Silver;
+
+            txtPW.UseSystemPasswordChar = false;
+            txtPW.Text = "패스워드";
+            txtPW.ForeColor = Color.Silver;
+
+            chkShowPW.Checked = false;
+            lblErrorMsg.Visible = false;
+            txtID.Focus();
+        }
+
+        private void chkShowPW_CheckedChanged(object sender, EventArgs e)
+        {
+            if (txtPW.Text == "패스워드" || string.IsNullOrWhiteSpace(txtPW.Text))
+            {
+                txtPW.UseSystemPasswordChar = false;
+                return;
+            }
+
+            txtPW.UseSystemPasswordChar = !chkShowPW.Checked;
         }
 
         private void txtID_KeyDown(object sender, KeyEventArgs e)
